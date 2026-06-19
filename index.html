@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon India</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="top-location">Deliver to <strong>India</strong></div>
+    <div class="top-links">
+      <span>Hello, Sign in</span>
+      <span>Returns</span>
+      <span>Orders</span>
+      <span>Try Prime</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">amazon</span>
+      <span class="in-text">.in</span>
+    </div>
+    <div class="search-bar">
+      <select class="search-category" aria-label="Category">
+        <option>All</option>
+        <option>Electronics</option>
+        <option>Fashion</option>
+        <option>Home</option>
+        <option>Beauty</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Search Amazon.in">
+      <button id="searchButton">Search</button>
+    </div>
+    <div class="header-actions">
+      <div class="header-link">
+        <span class="small-text">Hello, sign in</span>
+        <strong>Account & Lists</strong>
+      </div>
+      <div class="header-link">
+        <span class="small-text">Returns</span>
+        <strong>& Orders</strong>
+      </div>
+      <button class="cart-button" id="cartButton">
+        Cart <span id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="top-nav">
+    <ul>
+      <li>All</li>
+      <li>Today’s Deals</li>
+      <li>Amazon Pay</li>
+      <li>Mobiles</li>
+      <li>Customer Service</li>
+      <li>Gift Cards</li>
+      <li>Fashion</li>
+      <li>Home</li>
+    </ul>
+  </nav>
+
+  <main class="page-content">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">SHOP THE FESTIVE SALE</span>
+        <h1>Discover top deals across electronics, fashion, and more.</h1>
+        <p>Explore curated deals, exclusive offers, and fast delivery on products from trusted brands.</p>
+        <div class="hero-actions">
+          <button class="primary-button">Shop Today</button>
+          <button class="secondary-button">View Popular</button>
+        </div>
+      </div>
+      <div class="hero-highlights">
+        <div class="highlight-card">
+          <strong>Bank Offers</strong>
+          <p>Extra discount with EMI and credit cards.</p>
+        </div>
+        <div class="highlight-card">
+          <strong>Express Delivery</strong>
+          <p>Delivered in 2 days for eligible products.</p>
+        </div>
+        <div class="highlight-card">
+          <strong>Easy Returns</strong>
+          <p>Free returns on select items.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-grid">
+      <div class="promo-card promo-large">
+        <div>
+          <h3>Electronics Sale</h3>
+          <p>Up to 55% off on smartphones and accessories.</p>
+        </div>
+      </div>
+      <div class="promo-card">
+        <h3>Fashion Deals</h3>
+        <p>New styles from top brands.</p>
+      </div>
+      <div class="promo-card">
+        <h3>Home & Kitchen</h3>
+        <p>Essentials for modern living.</p>
+      </div>
+    </section>
+
+    <section class="quick-links">
+      <div class="quick-link">Mobiles</div>
+      <div class="quick-link">Home Appliances</div>
+      <div class="quick-link">Fashion</div>
+      <div class="quick-link">Beauty</div>
+      <div class="quick-link">Grocery</div>
+    </section>
+
+    <section class="products-section">
+      <h2>Top picks for you</h2>
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <div>
+        <h2>Your Cart</h2>
+        <p id="cartSummary">Items in your cart</p>
+      </div>
+      <button class="close-cart" id="closeCart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Subtotal</span>
+        <strong id="cartTotal">₹0.00</strong>
+      </div>
+      <button class="checkout-button" id="checkoutButton">Proceed to Buy</button>
+    </div>
+  </aside>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
